@@ -1,0 +1,520 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+}
+
+.contenedor{
+    position:relative;
+    margin:auto;
+    width: 100%;
+    height: auto;
+}
+
+.fila{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    clear:both;
+    display: table;
+    text-align: center;
+
+}
+
+[class*="col-"]{
+    float:left;
+    padding: 10px;
+}
+/*=============================================
+SECCION-1
+=============================================*/
+#header{
+    position: fixed;
+    background: black;
+}
+.hero{
+    position: relative;
+    z-index: 2;
+}
+header #logo a img{
+    width: 250px;
+
+}
+.hero h1{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 50px;
+    font-family: 'Alfa Slab One', cursive;
+    text-decoration:  none;
+    color: #80f4f4;
+    padding:  5px 0;
+    position: relative;
+    -webkit-text-stroke: 2px black;
+    align-items: center;
+    display: inline-block;
+}
+nav{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.nav-links{
+    padding: 28px 0;
+}
+.nav-links li{
+    align-items: center;
+    display: inline-block;
+    margin:  5px 15px;
+}
+
+.nav-links li a{
+    font-size: 20px;
+    font-family: 'Alfa Slab One', cursive;
+    text-decoration:  none;
+    color: #80f4f4;;
+    padding:  5px 0;
+    position: relative;
+    -webkit-text-stroke: 2px black;
+     
+}
+.nav-links li a::after{
+    content: '';
+    background: #80f4f4;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition:  width 0.3s;
+}
+.nav-links li a:hover::after{
+    width: 100%;
+}
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1c1c1d;
+    opacity: 0.7;
+}
+.modal-container{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    width: 40%;
+    height: 50%;
+    background: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    transition: transform 1s;
+    transform:  translateY(0%);
+    /*overflow: hidden;*/
+    border-radius: 10px;
+}
+.close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: #c44a4a;
+    color:white;
+    line-height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+.modal-close{
+    transform: translateY(-200%);
+}
+.modal > img{
+    margin-left: 25%;
+    width: 50%;
+    height: 50%;
+}
+
+/*=============================================
+SECCION-2
+=============================================*/
+.seccion2 #textbox{
+    transform: rotate(0deg);
+    position: relative;
+    z-index: 2;
+    color: #80f4f4;
+    -webkit-text-stroke: 2px black ;
+}
+#textbox h1{
+    margin-top: 150px;
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 40px;
+}
+#textbox p{
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 25px;
+}
+#textbox h2{
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 30px;
+}
+
+.seccion2 #poster img{
+    position: relative;
+    z-index: 2;
+    width: 450px;
+    height: 575px;
+}
+/*=============================================
+SECCION-3
+=============================================*/
+#botones {
+    margin-top: 175px;
+    margin: 0;
+    padding: 10px;
+    height: 70px;
+    width: 250px;
+    position: relative;
+    z-index: 2;
+    
+
+}
+
+footer #botones a img{
+    transform: rotate(10deg);
+    position: relative;
+    z-index: 2;
+    width: 35px;
+}
+/*=============================================
+SECCION-4
+=============================================*/
+.seccion4{
+    background: black;
+    position: relative;
+    z-index: 2;
+}
+.seccion4 #textbox2 h1{
+    margin-top: 150px;
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    color: #80f4f4;
+    -webkit-text-stroke: 2px black ;
+}
+.seccion4 #textbox2 h2{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    color: white;
+}
+.seccion4 #banner img{
+    margin-top: 150px;
+    border-radius: 30px;
+}
+.seccion4 #textbox2 h5{
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    color: #80f4f4;
+    -webkit-text-stroke: 2px black ;
+}
+#botones2 {
+    margin: 0;
+    padding: 10px;
+    margin-top: 175px;
+    height: 70px;
+    width: 250px;
+    position: relative;
+    z-index: 2;
+    
+
+}
+
+footer #botones2 a img{
+    transform: rotate(10deg);
+    position: relative;
+    z-index: 2;
+    width: 35px;
+}
+/*=============================================
+SECCION-5
+=============================================*/
+.seccion5{
+    background: black;
+    position: relative;
+    z-index: 2;
+}
+.seccion5 #textbox2 h1{
+    margin-top: 150px;
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    color: #80f4f4;
+    -webkit-text-stroke: 2px black ;
+}
+.seccion5 #textbox2 h2{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    color: white;
+}
+.seccion5 #hobbies img{
+    width: 700px;
+    margin-top: 150px;
+    border-radius: 30px;
+}
+.seccion5 #textbox2 h5{
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    color: #80f4f4;
+    -webkit-text-stroke: 2px black ;
+}
+#botones2 {
+    margin: 0;
+    padding: 10px;
+    margin-top: 175px;
+    height: 70px;
+    width: 250px;
+    position: relative;
+    z-index: 2;
+}
+
+footer #botones2 a img{
+    transform: rotate(10deg);
+    position: relative;
+    z-index: 2;
+    width: 35px;
+}
+/*=============================================
+SECCION-6
+=============================================*/
+.seccion6{
+    background: black;
+    position: relative;
+    z-index: 2;
+}
+.seccion6 #textbox2 h1{
+    margin-top: 150px;
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    color: #80f4f4;
+    -webkit-text-stroke: 2px black ;
+}
+.seccion6 #textbox2 h2{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    color: white;
+}
+.seccion6 #banner img{
+    margin-left: 150px;
+    height: 320px;
+    width: 320px;
+}
+.seccion6 #textbox2 h5{
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    color: #80f4f4;
+    -webkit-text-stroke: 2px black ;
+}
+#botones2 {
+    margin: 0;
+    padding: 10px;
+    margin-top: 175px;
+    height: 70px;
+    width: 250px;
+    position: relative;
+    z-index: 2;
+}
+
+footer #botones2 a img{
+    transform: rotate(10deg);
+    position: relative;
+    z-index: 2;
+    width: 35px;
+}
+/*=============================================
+SECCION-4
+=============================================*/
+.seccion7{
+    background: black;
+    position: relative;
+    z-index: 2;
+}
+.seccion7 #textbox2 h1{
+    margin-top: 150px;
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    color: #80f4f4;
+    -webkit-text-stroke: 2px black ;
+}
+.seccion7 #textbox2 h2{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    color: white;
+}
+.seccion7 #banner img{
+    margin-top: 150px;
+    border-radius: 30px;
+}
+.seccion7 #textbox2 h5{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    color: #80f4f4;
+    -webkit-text-stroke: 2px black ;
+}
+
+#botones2 {
+    margin: 0;
+    padding: 10px;
+    margin-top: 175px;
+    height: 70px;
+    width: 250px;
+    position: relative;
+    z-index: 2;
+    
+
+}
+footer #botones2 a img{
+    transform: rotate(10deg);
+    position: relative;
+    z-index: 2;
+    width: 35px;
+}
+/*=============================================
+PANTALLA DE ESCRITORIO GRANDE - LARGE (lg)
+=============================================*/
+@media(min-width:1200px){
+
+    .col-lg-12{width: 100%;}
+    .col-lg-11{width: 91.66666666%;}
+    .col-lg-10{width: 83.33333333%;}  
+    .col-lg-9{width: 75%;}
+    .col-lg-8{width: 66.66666667%;}
+    .col-lg-7{width: 58.33333333%;}
+    .col-lg-6{width: 50%;}
+    .col-lg-5{width: 41.66666667%;}
+    .col-lg-4{width: 33.33333333%;}
+    .col-lg-3{width: 25%;}
+    .col-lg-2{width: 16.66666667%;}
+    .col-lg-1{width: 8.33333333%;}
+    .col-lg-0{display: none;}
+    #seccion4 article p img{
+        width: 50%;
+    }
+}
+/*=============================================
+PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md)
+=============================================*/
+@media(max-width:1199px) and (min-width:992px){
+
+    .col-md-12{width: 100%;}
+    .col-md-11{width: 91.66666666%;}
+    .col-md-10{width: 83.33333333%;}  
+    .col-md-9{width: 75%;}
+    .col-md-8{width: 66.66666667%;}
+    .col-md-7{width: 58.33333333%;}
+    .col-md-6{width: 50%;}
+    .col-md-5{width: 41.66666667%;}
+    .col-md-4{width: 33.33333333%;}
+    .col-md-3{width: 25%;}
+    .col-md-2{width: 16.66666667%;}
+    .col-md-1{width: 8.33333333%;}
+    .col-md-0{display: none;}
+    #seccion4 article p img{
+        width: 60%;
+    }
+}
+/*=============================================
+PANTALLA DE TABLET - SMALL (sm)
+=============================================*/
+@media(max-width:991px) and (min-width:768px){
+
+    .col-sm-12{width: 100%;}
+    .col-sm-11{width: 91.66666666%;}
+    .col-sm-10{width: 83.33333333%;}  
+    .col-sm-9{width: 75%;}
+    .col-sm-8{width: 66.66666667%;}
+    .col-sm-7{width: 58.33333333%;}
+    .col-sm-6{width: 50%;}
+    .col-sm-5{width: 41.66666667%;}
+    .col-sm-4{width: 33.33333333%;}
+    .col-sm-3{width: 25%;}
+    .col-sm-2{width: 16.66666667%;}
+    .col-sm-1{width: 8.33333333%;}
+    .col-sm-0{display: none;}
+    #seccion4 article p img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/*=============================================
+PANTALLA DE PHONES - EXTRA SMALL (xs)
+=============================================*/
+@media(max-width:767px){
+
+    .col-xs-12{width: 100%;}
+    .col-xs-11{width: 91.66666666%;}
+    .col-xs-10{width: 83.33333333%;}  
+    .col-xs-9{width: 75%;}
+    .col-xs-8{width: 66.66666667%;}
+    .col-xs-7{width: 58.33333333%;}
+    .col-xs-6{width: 50%;}
+    .col-xs-5{width: 41.66666667%;}
+    .col-xs-4{width: 33.33333333%;}
+    .col-xs-3{width: 25%;}
+    .col-xs-2{width: 16.66666667%;}
+    .col-xs-1{width: 8.33333333%;}
+    .col-xs-0{display: none;}
+    #seccion4 article p img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
